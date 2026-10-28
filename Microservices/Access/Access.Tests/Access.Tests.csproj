@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Access.Domain\Access.Domain.csproj" />
+    <ProjectReference Include="..\Access.Persistence\Access.Persistence.csproj" />
   </ItemGroup>
 
 </Project>
