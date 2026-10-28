@@ -1,7 +1,13 @@
+using Access.Application;
+using Access.Persistence;
+
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddOpenApi();
+
+builder.Services.AddApplicationServices();
+builder.Services.AddPersistenceServices(builder.Configuration);
 
 WebApplication app = builder.Build();
 
